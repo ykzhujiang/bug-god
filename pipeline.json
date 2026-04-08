@@ -1,0 +1,35 @@
+{
+  "project": "bug-god",
+  "created_at": "2026-04-08T07:26:32.216115+00:00",
+  "github_repo": "ykzhujiang/bug-god",
+  "config": {
+    "theme": "小公司CTO陈默通宵debug时意外触发现实Bug检测系统，能看到现实世界中的Bug——人际关系的逻辑漏洞、商业决策的隐藏Bug。第一章：发现能力+用Bug视角看穿投资人的骗局当场拆穿。",
+    "genre": "system-awakening",
+    "style": "anime",
+    "duration": 15,
+    "characters": 2,
+    "setting": "当代中国，深圳科技创业区",
+    "ratio": "9:16",
+    "episode": "ep01",
+    "source_video": null,
+    "entry": "B"
+  },
+  "status": "not_started",
+  "steps": {
+    "step1b": {
+      "status": "not_started"
+    },
+    "step1.5": {
+      "status": "not_started"
+    },
+    "step3": {
+      "status": "not_started"
+    },
+    "step4": {
+      "status": "not_started"
+    },
+    "step6": {
+      "status": "not_started"
+    }
+  }
+}
