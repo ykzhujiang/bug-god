@@ -3,109 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bug之神 — 分镜剧本</title>
+<title>PART 1: ASSET DESCRIPTIONS</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0f;color:#e0e0e0;font-family:-apple-system,'PingFang SC',sans-serif;line-height:1.8;padding:20px;max-width:680px;margin:0 auto}
-h1{text-align:center;font-size:28px;color:#00ff88;margin:30px 0 10px;text-shadow:0 0 20px rgba(0,255,136,0.3)}
-.subtitle{text-align:center;color:#888;font-size:14px;margin-bottom:30px}
-.section-title{font-size:20px;color:#00ccff;margin:30px 0 15px;border-left:4px solid #00ccff;padding-left:12px}
-.char{background:#111;border:1px solid #222;border-radius:8px;padding:16px;margin:10px 0}
-.char-name{color:#ffcc00;font-weight:bold;font-size:16px}
-.scene{background:#0d1117;border:1px solid #1a3a2a;border-radius:8px;padding:16px;margin:10px 0}
-.scene-name{color:#00ff88;font-weight:bold}
-.segment-header{background:linear-gradient(135deg,#1a0a2e,#0a1a2e);border:1px solid #333;border-radius:12px;padding:20px;margin:30px 0 15px}
-.segment-meta{color:#aaa;font-size:13px;margin:5px 0}
-.part{background:#111;border-left:3px solid #00ff88;border-radius:0 8px 8px 0;padding:16px 16px 16px 20px;margin:12px 0;position:relative}
-.part-num{position:absolute;left:-2px;top:-8px;background:#00ff88;color:#000;font-size:11px;font-weight:bold;padding:2px 8px;border-radius:0 8px 8px 0}
-.dialogue{color:#ffcc00;font-style:italic;margin:8px 0}
-.camera{color:#888;font-size:13px;margin-top:8px;border-top:1px solid #222;padding-top:8px}
-.tag-info{color:#00ff88}
-.tag-warning{color:#ffaa00}
-.tag-error{color:#ff4444}
-.tag-fatal{color:#ff0044;text-shadow:0 0 10px rgba(255,0,68,0.5)}
-footer{text-align:center;color:#555;font-size:12px;margin-top:40px;padding:20px 0}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'PingFang SC', sans-serif; background: #0a0a0f; color: #e0e0e0; max-width: 600px; margin: 0 auto; padding: 16px; font-size: 16px; line-height: 1.7; }
+h1 { text-align: center; font-size: 24px; margin: 20px 0; color: #fff; }
+h2 { font-size: 20px; margin: 16px 0 12px; color: #4fc3f7; }
+.section { background: #1a1a2e; border-radius: 12px; padding: 16px; margin: 16px 0; }
+.character { display: flex; gap: 12px; margin: 12px 0; align-items: flex-start; }
+.char-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid #4fc3f7; flex-shrink: 0; }
+.scene { margin: 12px 0; }
+.scene-img { width: 100%; border-radius: 8px; margin-bottom: 8px; }
+.segment { background: #16213e; border-radius: 12px; padding: 16px; margin: 16px 0; border-left: 4px solid #4fc3f7; }
+.meta { color: #aaa; font-size: 14px; margin: 4px 0; }
+.physical-state { background: #0d1b2a; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 14px; color: #8899aa; white-space: pre-line; }
+.part { background: #1a1a2e; padding: 12px; border-radius: 8px; margin: 8px 0; }
+.part-num { background: #4fc3f7; color: #000; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 13px; }
+.dialogue { color: #ffd54f; font-weight: bold; }
+.char-tag { color: #4fc3f7; font-weight: bold; }
+.camera { background: #1b2838; padding: 8px 12px; border-radius: 8px; margin: 8px 0; font-size: 14px; color: #81c784; }
 </style>
 </head>
 <body>
-
-<h1>🐛 Bug之神</h1>
-<p class="subtitle">V6.1 短剧剧本 · EXP-1072 · 单Segment 15秒</p>
-
-<div class="section-title">🎭 角色设定</div>
-
-<div class="char">
-<span class="char-name">陈默</span> — 30岁，男，180cm瘦高，肤色偏白略苍白，瓜子脸，黑框眼镜，黑眼圈明显。穿洗旧蓝白格衬衫+牛仔裤+深色运动鞋。闷骚程序员气质。
-</div>
-
-<div class="char">
-<span class="char-name">王总</span> — 50岁，男，170cm微胖发福，肤色红润，圆脸，眼角细纹，精明眼神。油亮大背头，深蓝三件套西装+金表+锃亮皮鞋。
-</div>
-
-<div class="section-title">🏙️ 场景设定</div>
-
-<div class="scene">
-<span class="scene-name">深夜办公室</span> — 深圳创业区，三块屏幕蓝光+暖色台灯，泡面盒咖啡杯，窗外深圳夜景。冷暖光交织。
-</div>
-
-<div class="scene">
-<span class="scene-name">早晨会议室</span> — 自然光落地窗，白板项目进度，简约现代装修。
-</div>
-
-<div class="section-title">🎬 分镜剧本</div>
-
-<div class="segment-header">
-<div style="font-size:18px;color:#fff;font-weight:bold">Segment 1 · 15秒 · 6 Parts</div>
-<div class="segment-meta">场景：深夜办公室 → 早晨会议室</div>
-<div class="segment-meta">角色：陈默, 王总</div>
-</div>
-
-<div class="part">
-<span class="part-num">Part 1</span>
-<p>深夜办公室，三块屏幕亮着代码，<b>陈默</b>揉着眼睛猛灌一口咖啡，屏幕上一行代码突然全部变红，他身体微微前倾皱眉。</p>
-<p class="dialogue">「第47个Bug……这代码是不是活的？」</p>
-<p class="camera">📷 中景俯拍15°，固定→缓推至陈默面部3/4侧面特写</p>
-</div>
-
-<div class="part">
-<span class="part-num">Part 2</span>
-<p>空气中突然浮现<span class="tag-info">半透明荧光绿弹窗</span>，铺满陈默视野。<b>陈默</b>身体猛向后仰弹开键盘，双手悬空，瞪大眼睛条件反射疯狂敲Ctrl+Z，弹窗越按越多。表情从震惊→崩溃。</p>
-<p class="dialogue">「Ctrl加Z！Ctrl加Z！怎么撤销不了——这什么鬼弹窗？！」</p>
-<p class="camera">📷 过肩镜头→快速拉远展示满屏弹窗→回推陈默惊恐脸</p>
-</div>
-
-<div class="part">
-<span class="part-num">Part 3</span>
-<p>早晨走廊，<b>陈默</b>走路时看到路过的张姐头顶浮现<span class="tag-info">淡绿色INFO弹窗</span>。他忍不住嘴角抽搐，赶紧低头假装看手机掩饰。</p>
-<p class="dialogue">（内心）「张姐头上写着触发原因——老公忘了结婚纪念日……我现在能卸载这系统吗？」</p>
-<p class="camera">📷 平拍跟移→特写张姐头顶弹窗→回陈默忍笑表情</p>
-</div>
-
-<div class="part">
-<span class="part-num">Part 4</span>
-<p>会议室，<b>陈默</b>坐左侧身体前倾目光锐利侧视<b>王总</b>。王总坐右侧身体后靠双手打开做大饼手势笑容灿烂，每说一句话头顶弹出<span class="tag-error">红色ERROR警告</span>。</p>
-<p class="dialogue">「我们的投资逻辑是长期价值……」<br>（陈默内心）「他身上7个ERROR——财务数据伪造、已投项目3个跑路……」</p>
-<p class="camera">📷 双人中景固定，180度法则锁定，ERROR弹窗逐个浮现</p>
-</div>
-
-<div class="part">
-<span class="part-num">Part 5</span>
-<p><b>陈默</b>站起身双手撑桌前倾逼近<b>王总</b>方向。王总笑容僵住身体后缩。陈默翻开笔记本指向数据，王总额头渗汗。</p>
-<p class="dialogue">「王总，您投的星辰科技……上个月刚被立案了吧？这个您怎么没写在BP里？」</p>
-<p class="camera">📷 低角度仰拍→推至特写→快切王总慌张脸</p>
-</div>
-
-<div class="part">
-<span class="part-num">Part 6</span>
-<p>走廊，<b>陈默</b>背靠墙壁微低头，手心浮现<span class="tag-fatal">FATAL级红色弹窗</span>，荧光红光映在脸上。瞳孔微缩，手缓缓握拳。</p>
-<p class="dialogue">「检测到FATAL级Bug——目标：合伙人李志远。Bug类型……」<br>「……李哥？」</p>
-<p class="camera">📷 远景→缓推至3/4侧脸特写，画面渐暗只留荧光绿余光</p>
-</div>
-
-<footer>
-EXP-1072 · Bug之神 · Trinity V3 Operator · CYCLE-operator-796<br>
-<a href="https://github.com/ykzhujiang/bug-god/blob/main/production/storyboard/ep01.md" style="color:#00ccff">📄 Markdown原文</a>
-</footer>
-
+<h1>PART 1: ASSET DESCRIPTIONS</h1>
+<div class="section"><h2>👤 角色设定</h2><div class="character"><img src="assets/陈默.png" class="char-img" alt="陈默"><div><strong>[陈默]</strong><p>30岁，男，180cm瘦高体型，肤色偏白略显苍白，瓜子脸，黑框眼镜遮盖下的细长眼，黑眼圈明显，鼻梁挺拔，薄唇，乌黑短发发丝微乱，身穿洗旧的蓝白格衬衫，纽扣随意解开一两颗，搭配磨白牛仔裤和深色运动鞋。</p></div></div><div class="character"><img src="assets/王总.png" class="char-img" alt="王总"><div><strong>[王总]</strong><p>50岁，男，170cm微胖发福体型，肤色红润有光泽，圆脸，面颊饱满，笑时眼角堆叠细纹，眼神精明锐利，宽鼻头，厚唇，下巴微双，乌黑油亮的大背头一丝不苟，身穿昂贵定制的深蓝色三件套西装，白色丝质衬衫，深色领带，佩戴闪亮的劳力士金表，皮鞋擦得锃亮。</p></div></div><div class="character"><img src="assets/深夜办公室.png" class="char-img" alt="深夜办公室"><div><strong>[深夜办公室]</strong><p>深圳科技创业区小公司办公室深夜场景。三块电脑屏幕发出蓝光，桌上堆满泡面盒和咖啡杯，暖色台灯照亮工位。窗外是深圳夜景灯光。整体暖冷光交织。</p></div></div><div class="character"><img src="assets/早晨会议室.png" class="char-img" alt="早晨会议室"><div><strong>[早晨会议室]</strong><p>同公司会议室，自然光透过落地窗，白板上写着项目进度。简约现代装修，会议桌两侧各有座椅。</p></div></div><div class="character"><img src="assets/陈默.png" class="char-img" alt="陈默"><div><strong>[陈默]</strong><p>画面左侧，坐在工位电脑椅上，双手放在键盘上，肩膀下沉，黑眼圈明显，视线盯着屏幕。</p></div></div></div><div class="section"><h2>🎬 场景</h2><div class="scene"><img src="assets/深夜办公室.png" class="scene-img" alt="深夜办公室"><p><strong>[深夜办公室]</strong>: 深圳科技创业区小公司办公室深夜场景。三块电脑屏幕发出蓝光，桌上堆满泡面盒和咖啡杯，暖色台灯照亮工位。窗外是深圳夜景灯光。整体暖冷光交织。</p></div><div class="scene"><img src="assets/早晨会议室.png" class="scene-img" alt="早晨会议室"><p><strong>[早晨会议室]</strong>: 同公司会议室，自然光透过落地窗，白板上写着项目进度。简约现代装修，会议桌两侧各有座椅。</p></div></div><div class="segment"><h2>🎬 Segment 1</h2><div class="meta">📍 [深夜办公室] → [早晨会议室]</div><div class="meta">👥 [陈默], [王总]</div><div class="physical-state"><strong>Physical State:</strong><br>- [陈默]: 画面左侧，坐在工位电脑椅上，双手放在键盘上，肩膀下沉，黑眼圈明显，视线盯着屏幕。</div><div class="part"><span class="part-num">Part 1</span> 深夜办公室，三块屏幕亮着代码，<span class="char-tag">[陈默]</span>揉着眼睛猛灌一口咖啡，屏幕上一行代码突然全部变红，他身体微微前倾皱眉。<span class="char-tag">[陈默]</span>说：<span class="dialogue">"第47个Bug……这代码是不是活的？"</span></div><div class="part"><span class="part-num">Part 2</span> 空气中突然浮现半透明荧光绿弹窗，铺满<span class="char-tag">[陈默]</span>视野。<span class="char-tag">[陈默]</span>身体猛向后仰弹开键盘，双手离开键盘悬空，瞪大眼睛条件反射疯狂敲击Ctrl+Z，弹窗越按越多。表情从震惊到崩溃。<span class="char-tag">[陈默]</span>说：<span class="dialogue">"Ctrl加Z！Ctrl加Z！怎么撤销不了——这什么鬼弹窗？！"</span></div><div class="part"><span class="part-num">Part 3</span> 早晨，办公室走廊，<span class="char-tag">[陈默]</span>走在走廊里，身体微侧避让路人，眼神警惕扫视四周。路过的张姐头顶浮现淡绿色INFO弹窗文字。<span class="char-tag">[陈默]</span>忍不住嘴角抽搐，赶紧低头假装看手机掩饰笑意。<span class="char-tag">[陈默]</span>内心独白：<span class="dialogue">"张姐头上写着触发原因——老公忘了结婚纪念日……我现在能卸载这系统吗？"</span></div><div class="part"><span class="part-num">Part 4</span> 会议室，<span class="char-tag">[陈默]</span>坐在会议桌左侧，身体前倾双手交叉桌上，目光锐利侧视右侧的<span class="char-tag">[王总]</span>。<span class="char-tag">[王总]</span>坐右侧身体后靠，双手打开做大饼手势笑容灿烂，每说一句话头顶弹出一个红色ERROR警告弹窗。<span class="char-tag">[王总]</span>说：<span class="dialogue">"我们的投资逻辑是长期价值……"</span> <span class="char-tag">[陈默]</span>内心独白：<span class="dialogue">"他身上7个ERROR——财务数据伪造、已投项目3个跑路……"</span></div><div class="part"><span class="part-num">Part 5</span> 同一会议室，<span class="char-tag">[陈默]</span>缓缓站起身，双手撑桌身体前倾逼近<span class="char-tag">[王总]</span>方向，目光平视前方。<span class="char-tag">[王总]</span>笑容僵住身体不自觉后缩。<span class="char-tag">[陈默]</span>翻开笔记本指向一组数据。<span class="char-tag">[王总]</span>额头渗汗。<span class="char-tag">[陈默]</span>说：<span class="dialogue">"王总，您投的星辰科技……上个月刚被立案了吧？这个您怎么没写在BP里？"</span></div><div class="part"><span class="part-num">Part 6</span> 会议室外走廊，<span class="char-tag">[陈默]</span>背靠墙壁微低头，手心浮现一个新的红色FATAL级弹窗，荧光红光映在脸上。<span class="char-tag">[陈默]</span>看完弹窗内容瞳孔微缩，手缓缓握拳。系统提示音响起，弹窗文字显示。<span class="char-tag">[系统]</span> <span class="dialogue">"检测到FATAL级Bug——目标：合伙人李志远。Bug类型……"</span> <span class="char-tag">[陈默]</span>说：<span class="dialogue">"……李哥？"</span></div><div class="camera">🎥 中景俯拍15°，固定→缓推至陈默面部3/4侧面特写，正常速度</div></div>
 </body>
 </html>
