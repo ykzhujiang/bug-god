@@ -1,0 +1,40 @@
+{
+  "verdict": "PASS",
+  "style": "anime",
+  "assets": [
+    {
+      "label": "陈默",
+      "type": "character",
+      "verdict": "PASS",
+      "style_ok": true,
+      "setting_match": true,
+      "description_match": 5,
+      "quality_ok": true,
+      "issues": [],
+      "retry_suggestion": null
+    },
+    {
+      "label": "王总",
+      "type": "character",
+      "verdict": "PASS",
+      "style_ok": true,
+      "setting_match": true,
+      "description_match": 5,
+      "quality_ok": true,
+      "issues": [],
+      "retry_suggestion": null
+    },
+    {
+      "label": "创业公司-黎明",
+      "type": "scene",
+      "verdict": "PASS",
+      "style_ok": true,
+      "setting_match": true,
+      "description_match": 5,
+      "quality_ok": true,
+      "issues": [],
+      "retry_suggestion": null
+    }
+  ],
+  "summary": "3/3 assets passed"
+}
